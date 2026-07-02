@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: render-proxy
+    runtime: node
+    repo: https://github.com/saheednexatech-web/render-proxy
+    plan: free
+    region: oregon
+    buildCommand: npm install
+    startCommand: node server.js
